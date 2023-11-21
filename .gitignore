@@ -1,3 +1,5 @@
+.DS_Store
+
 # Prerequisites
 *.d
 
@@ -50,3 +52,71 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+
+# general file excludes
+~*.tmp
+*~
+~$*
+
+# ignore Xilinx ISE files
+/Xilinx\ ISE/**/*.*
+/Xilinx\ ISE/**/ise
+!/Xilinx\ ISE/**/*.xise
+!/Xilinx\ ISE/**/iseconfig/filter.filter
+
+# ignore Xilinx Vivado files
+/Xilinx\ Vivado/**/*.*
+!/Xilinx\ Vivado/**/*.xpr
+
+# ignore QuestaSim files
+/QuestaSim/*
+/QuestaSim/**/*.*
+!/QuestaSim/*.cmd
+!/QuestaSim/*.log
+
+# ignore GHDL files
+/ghdl/**/*.*
+!/ghdl/*.cmd
+!/ghdl/*.log
+
+# general whitelist
+!.publish
+!.git*
+
+*.cf
+JSONTestSuite/config.pkg.vhdl
+
+
+
+# Windows default autosave extension
+*.asv
+
+# OSX / *nix default autosave extension
+*.m~
+
+# Compiled MEX binaries (all platforms)
+*.mex*
+
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
+
+# Generated helpsearch folders
+helpsearch*/
+
+# Simulink code generation folders
+slprj/
+sccprj/
+
+# Matlab code generation folders
+codegen/
+
+# Simulink autosave extension
+*.autosave
+
+# Simulink cache files
+*.slxc
+
+# Octave session info
+octave-workspace
