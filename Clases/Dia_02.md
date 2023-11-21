@@ -86,3 +86,125 @@ It is possible to define macros as well
 - When you create a custom IP< you need to load the specific IP Address in Vitis before use it.
 
 ---
+
+# Introduction to AXI-Custom IP
+
+how to interconnect the different components of the design.
+
+BUS specification have differents forms, one of the first was the `PLBv46`, now it is called `AXI`, other noo to much commont is `WishBone`, 
+
+| Interface       | Features                                                             | Burst     | Data Width      | Application                     |
+| --------------- | -------------------------------------------------------------------- | --------- | --------------- | ------------------------------- |
+| `AXI4`        | Traditional Address/Data Burst<br />(Single address, multiple data)  | Up to 256 | 32 to 1024 bits | Embedded,<br />Memory           |
+| `AXI4-Stream` | Data-Only, Burst                                                     | Unlimited | Any number      | DSP, Video,<br />Communications |
+| `AXI4-Lite`   | Traditional Address/Data-No Burst (Single<br />address, single data) | 1         | 32 or 64 bits   | Small Control<br />Logic, FSM   |
+
+Vivado provides a tool call `ILS` (Internal Logic Scope) or `ILA` (Internal Logic Analyzer) to debug `AXI` communication.
+
+---
+
+### Custom AXI IPs
+
+When you need block in your Vivado environment that is not provided for Vivado, you need to create your custom IP.
+
+Vendors cand provide some types of IPCores, some of them provide VHDL code, not allowed to re-sell, and modifications are not supported by vendors, also can provide encrypted HDL, works as a black box where you configure with some parameters, and Gate-Level Netlist.
+
+To connect an IP with AXI we need to create an Wrapper to make the connection.
+
+
+there is a problem with Makefile and using Custom IP core, some of the solutions are provided in [Link 1](https://support.xilinx.com/s/article/75527?language=en_US) or [Link 2](https://support.xilinx.com/s/question/0D52E00006hpRo8SAE/vitis-20211-error-makefile?language=en_US), but also I provide a solution in my [Repository](https://github.com/PhysicsUdeA/GICM_Xilinx_Tutorial).
+
+Use this Makefile prototype
+
+```makefile
+COMPILER=
+ARCHIVER=
+CP=cp
+COMPILER_FLAGS=
+EXTRA_COMPILER_FLAGS=
+LIB=libxil.a
+
+RELEASEDIR=../../../lib
+INCLUDEDIR=../../../include
+INCLUDES=-I./. -I${INCLUDEDIR}
+
+INCLUDEFILES=$(wildcard *.h)
+LIBSOURCES=$(wildcard *.c *.cpp)
+OUTS =*.o
+OBJECTS = $(addsuffix .o, $(basename $(wildcard *.c *.cpp)))
+ASSEMBLY_OBJECTS = $(addsuffix .o, $(basename $(wildcard *.S)))
+
+libs:
+	echo "Compiling myip_led_ctrl..."
+	$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
+	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OBJECTS} ${ASSEMBLY_OBJECTS}
+	make clean
+
+include:
+	${CP} $(INCLUDEFILES) $(INCLUDEDIR)
+
+clean:
+	rm -rf ${OBJECTS} ${ASSEMBLY_OBJECTS}
+```
+
+---
+
+**SOLUTION**
+
+This issue is related to the Makefile used in the driver output directory, whether it was created manually, or by the tools.
+
+Compare your Makefile to the highlighted sections in the example Makefile below. This issue is planned to be addressed in a future release.
+
+Original:
+
+```makefile
+INCLUDEFILES=*.h
+LIBSOURCES=*.c
+OUTS = *.o
+
+libs:
+echo "Compiling myip"
+$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
+$(ARCHIVER) -r ${RELEASEDIR}/${LIB} $(OUTS)
+make clean
+
+include:
+${CP} $(INCLUDEFILES) $(INCLUDEDIR)
+
+clean:
+rm -rf ${OUTS}
+```
+
+This issue is due to the OUTS = *.o definition. In the latest mingw toolchains, using *.o will not work. The Makefile will need to be updated to use wildcards as in the below example:
+
+```makefile
+INCLUDEFILES=*.h
+LIBSOURCES=*.c
+OUTS = *.o
+OBJECTS = $(addsuffix .o, $(basename $(wildcard *.c)))
+ASSEMBLY_OBJECTS = $(addsuffix .o, $(basename $(wildcard *.S)))
+
+libs:
+echo "Compiling myip"
+$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
+$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OBJECTS} ${ASSEMBLY_OBJECTS}
+make clean
+
+include:
+${CP} $(INCLUDEFILES) $(INCLUDEDIR)
+
+clean:
+rm -rf ${OBJECTS} ${ASSEMBLY_OBJECTS}
+```
+
+**Method 1:** Modify your custom exported IP drivers folder to modify the Makefile as above. Then add the IP to your user repository and include it in your Vivado project, then export the XSA via write_hw_platform or** ** **File > Export > Export Hardware** . Be sure to check that the output XSA content (the drivers folder and updated Makefile) is correct.
+
+**Method 2:** If the driver is added as part of an existing XSA file, then you can extract the Makefile from the XSA or open the XSA as an archive and edit the Makefile manually, then re-insert it into the XSA. Once edited, be sure to Update the HW Specification on your Platform project (right-click on your platform project in the Explorer view) or create a new Platform project in Vitis with the modified XSA and modify your application to use the new platform.
+
+**Method 3:** Create the folder hierarchy below, and place the driver into the drivers folder:
+repo\XilinxProcessorIPLib\drivers
+Then in Vitis, select** ** **Tools > Repository** . Select New, and point to the repo folder.
+
+**Note:** the two levels are needed.
+
+Then if you re-create your domain, the driver in the repo should be used instead of the one in the XSA.
