@@ -32,9 +32,9 @@ Some advantages:
 It is small and reasonable simple to learn.
 C has advantages in processor independence and is nor specific for any particular microprocessor
 
-———————————————————————————————————————————————
+---
 
-C concepts
+## C concepts
 
 Basic types
 
@@ -48,3 +48,41 @@ Volatile implies that the variable can be changed outside to the program, probab
 
 Use of pointers:
 Pointer correspond to a MEMORY ADDRESS
+
+
+---
+
+### GPIO set data direction
+
+```c
+void XGpio_SetDataDirection(XGpio *InstancePtr, unsigned Channel, u32 DirectionMask);
+```
+
+to read a pin value
+
+```c
+u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+```
+
+and similar to write
+
+when you include an IPCore in vivado, it willbe include in Vitis in the C Code
+
+```c
+#include "xspi.h"  /* SPI device driver */
+```
+
+it is important to know how to build your own custom IP. custom IP allow us to implement an IPCore that can be to imported into the Vivado environment.
+
+AXI bus assigns a custom address to the specific IP Core.
+
+It is possible to define macros as well
+
+```c
+#define LED_IP_mWriteReg(BaseAddress, RegOffset, Data) Xil_Out32((BaseAddress) + (RegOffset), (Xuint32)(Data))
+```
+
+
+- When you create a custom IP< you need to load the specific IP Address in Vitis before use it.
+
+---
