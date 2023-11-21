@@ -225,5 +225,12 @@ Solution of the laboratory
 
 ![1700595132086](image/Dia_02/1700595132086.png)
 
+### Performance results
+
+| Method         | text  | data | bss   | dec   | hex   |
+| -------------- | ----- | ---- | ----- | ----- | ----- |
+| `xil_printf` | 27021 | 1184 | 22616 | 50821 | C685  |
+| `printf`     | 55091 | 2588 | 22680 | 80359 | 139E7 |
+| `print`      | 25981 | 1184 | 22616 | 49781 | C275  |
 
 ---
