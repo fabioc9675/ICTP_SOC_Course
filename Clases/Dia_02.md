@@ -17,9 +17,9 @@ PLL Phase Lock Loop, provide an interface to multiply an input frequency.
 
 The input clock are provide for an external crystal, it feeds the PS and PL sides both.
 
-———————————————————————————————————————————————
+---
 
-Differences between C and Embedded C
+### Differences between C and Embedded C
 
 The capabilities of the processor systems are the most important constrain.
 
@@ -48,7 +48,6 @@ Volatile implies that the variable can be changed outside to the program, probab
 
 Use of pointers:
 Pointer correspond to a MEMORY ADDRESS
-
 
 ---
 
@@ -208,3 +207,23 @@ Then in Vitis, select** ** **Tools > Repository** . Select New, and point to the
 **Note:** the two levels are needed.
 
 Then if you re-create your domain, the driver in the repo should be used instead of the one in the XSA.
+
+
+# Laboratory 1 Solution
+
+Implementation in Vivado, Block diagram with IPCores.
+
+![1700594993815](image/Dia_02/1700594993815.png)
+
+Modifications in code
+
+![1700595102669](image/Dia_02/1700595102669.png)
+
+![1700595108953](image/Dia_02/1700595108953.png)
+
+Solution of the laboratory
+
+![1700595132086](image/Dia_02/1700595132086.png)
+
+
+---
