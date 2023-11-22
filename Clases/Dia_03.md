@@ -1,7 +1,10 @@
 # VHDL Introduction
 
+## Introduction to VHDL (Hardware Description Language)
 
-
+---
+some introduction 
+---
 
 ### Understanding concurrency
 
@@ -40,7 +43,7 @@ it is possible to do casting to, for aritmetical operations
 `datatype <= type(datatype)`
 
 ```vhdl
-_vectorsignal max_rem: unsigned (7 downto 0);
+signal max_rem: unsigned (7 downto 0);
 signal more_t: std_logic_vector (7 downto 0);
 
 max_rem <= more_t;
@@ -57,3 +60,34 @@ Also is possible to use a conversion function to make the cast
 
 - **Supercomputing**: Activities regarding to the mos efficient and high performance computong.
 - **Reconfigurable computing**: Provides the possibility to create your own hardware to implement supercomputing
+
+##### Custom computing problem
+
+- Which is the best reconfigurable harware?
+- Which language dshould be used
+- Which tools should be developed to configure the hardware needed
+- Which tools should be developed to compile the code for the efficient execution
+
+### Two main Computational Paradigms
+
+Scarcity of area and low circuit integration (**The uProcesor paradigm**)
+
+- Intensive reutilization of limited HW resources
+- Computation along time
+  - Usaully provide serial and sequential computing capabilities,
+
+Abindance of area anf high circuit integration (**The FPGA paradigm**)
+
+- Allocation of HW resources as needed
+- Computation along space
+  - provide posibility to do parallel computation depending on the design. programing logic resources.
+
+---
+
+##### Instrument architecture
+
+PC `<=>` Microprocessor `<=>` FPGA
+
+- **PC**: Allows to implement the virtual instrument to interact with the hardware
+- **uPS**: Allows not to much reconfiguration but it is easy to implement and control from PC
+- **FPGA**: Provide more possibilities from hradware reconfiguration and synthesis
