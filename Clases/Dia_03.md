@@ -324,3 +324,31 @@ this generates signal clocks with a specific period of time
 This assign values to the variables, can be use with wait to stop the execution for a period of time
 
 `assert` is use to compare the output with an spected value, in case it is not, can to be generate a `report severity ERROR;`
+
+---
+
+# Laboratory 2 - ComBlock
+
+AXI Bus allows to connect the PL with the PS, it provide an address that is used for the PS, the `ComBlock` or Communication Block was designed for ICTP to connect to the AXI Bus any interface easily, as for example RAM, FIFOS, Peripherals, etc.
+
+ComBlock is asynchronous, it does not deppend of the system clock.
+
+TDRAM can comunicato to the PL and to the PS.
+
+everything configured on AXI protocol is mapped on `xparameter.h` file, now, everything configurate in ComBlock in in `comblock.h` file.
+
+### Functions to read and write data
+
+```c
+/* Interaction with single data */
+void cbWrite(UINTPTR baseaddr, u32 reg, u32 value);
+u32 cbRead(UINTPTR baseaddr, u32 reg);
+
+/* Interaction with streaming data */
+void cbWriteBulk(UINTPTR baseaddr, int *buffer, u32 depth);
+void cbReadBulk(int *buffer, UINTPTR baseaddr, u32 depth);
+```
+
+### Comblock availability
+
+the ComBlock IP can be clone from the [repository](https://gitlab.com/ictp-mlab/core-comblock.git), and it is free for use.
