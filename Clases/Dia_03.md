@@ -91,3 +91,83 @@ PC `<=>` Microprocessor `<=>` FPGA
 - **PC**: Allows to implement the virtual instrument to interact with the hardware
 - **uPS**: Allows not to much reconfiguration but it is easy to implement and control from PC
 - **FPGA**: Provide more possibilities from hradware reconfiguration and synthesis
+
+
+##### COMPASS Experiment
+
+Creation of instruments to acquire data from 400 channels
+
+##### DSP
+
+DSP or digital Signal Processing are systems that allows to do complex aritmetical operation to do more complex calculations and operations.
+
+
+#### The abstraction
+
+This involves the hardware configuration and the definition of the activities to be developed with this hardware.
+
+We need to describe the activity, the activity means exchange of data. Synchronization, we assume the activity is synchronous, is move through a clock signal. how much activity can be done in a peroid of time.
+
+In ICTP, they create Universal Direct Memory Access `UDMA`, to create the hardware interconnection.
+
+
+### UDMA Instructions
+
+`UDMA 0x0000F001 0x0000F00A 1 1 256` 	RAM to RAM
+
+`UDMA 0x0000F002 0x0002F00B 1 0 1024` 	RAM to FIFO
+
+`UDMA 0x0000F003 0x0004F00C 0 1 256` 	FIFO to RAM
+
+`UDMA 0xAAAAF003 0x008FAA80 4 1 2000` 	RAM to RAM
+
+`UDMA 0xAAAA4004 0x000FAA40 0 0 0` 		Permanent Link
+
+
+`UDMA 0xFFFF4004 0x000FAA00 4 1 1024 "time > countmax" Abort` 		Conditional data transfer
+
+`UDMA 0xFFFF4004 0x000FAA00 4 1 1024 "counter1 == 31" Suspend` 		Conditional data transfer
+
+
+Other instructions are
+
+`UDMA_BC SA {DA_1, ..., DA_k} N NC <BC> <R>`
+
+`UDMA_GRR {SA_1, ..., SA_k} DA N NC <BC> <R>`
+
+* **SA**: Source Address
+* **DA**: Destination Address
+
+* **N**: Number of words per cycle
+* **NC**: Number of cycles
+
+* **BC**: Boolean condition
+* **R**: Reaction
+
+| Function      | Description               |
+| ------------- | ------------------------- |
+| `UDMA_BC`   | BroadCast                 |
+| `UDMA_DRR`  | Distribute Round Robin    |
+| `UDMA_DTFF` | Distribute Till FIFO Full |
+| `UDMA_GRR`  | Gathering Round Robin     |
+| `UDMA_GTFE` | Gathering Till FIFO Empty |
+
+TO associate VHDL code with these instructuons we need to stardardizate a port and everything that this involves.
+
+
+For advance instrumentation, everything is designed in FPGA side, because the limitations of the co-processor, mainly when there are critical parts to consider in the design.
+
+The industry demands a lot of programmers becuase is centered in make more confortable the programming, frezze the hardware and provide the possibilities for programmers, but in Scientific instrumentation, the process of measurement are centered in use high performance tools, then it is necessary to design in High Level Tools (FPGA). Normally in instrumentation is in FPGA part.
+
+
+| Hardware configuration | Software programming |
+| ---------------------- | -------------------- |
+| Modularity             | Time computation     |
+| Hierarchy              | Space computation    |
+| Functional blocks      | uP Instruction set   |
+| Instatiation           | UDMA instruction set |
+| Memory mapping         | Architecture         |
+| Interconnection        | Implementation       |
+
+
+In ICTP there are an architecture of computing made by an array of FPGA UltraScale+, in the photo they show 4x4 architecture, everything interconnected to improve the speed of sharing of the data, but it is scalable to NxN size. All the FPGA are connected with their neighbors. The interconnection is made under the OSI Model and can to have any topology that they wish. They use this as a computation cluster. Each board has an external memory. You can to use external RAM memory devices ut you need to design your electronics and it is very sensible to economical costs.
