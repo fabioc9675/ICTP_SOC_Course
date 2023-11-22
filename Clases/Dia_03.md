@@ -259,7 +259,7 @@ architecture behavior of match_bit is
 begin
   for i in a'range loop
     y <= '1';
-  enf loop;
+  end loop;
 end behavior;
 ```
 
@@ -284,7 +284,7 @@ library ieee;
 use ieee.std_logic_1164.all;                -- Define library, same as in VHDL source code
 
 entity test_my_sesign is
-en test_my_design;                          -- VHDL model without entity interface
+end test_my_design;                         -- VHDL model without entity interface
 
 architecture testbench of test_my_design is
   component my_design is
