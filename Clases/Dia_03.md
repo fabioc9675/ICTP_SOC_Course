@@ -251,9 +251,9 @@ end case;
 ```vhdl
 entity match_bit is
   port (a, b    : in  std_logic_vector(7 downto 0);
-           y    : out std_logic_vector(7 downto 0))
+           y    : out std_logic_vector(7 downto 0));
 
-end match_bit
+end match_bit;
 
 architecture behavior of match_bit is
 begin
@@ -266,3 +266,11 @@ end behavior;
 `range` is call atributte, takes information of the signal, in thos case takes the size, and replace the `a'range` for `(7 downto 0)`. there is another attribute call `len` that return the leng of the vector, in this case `a'len` is `8`
 
 `signal` works as a wire between inputs and outputs.
+
+you can not mix types in VHDL, there will present a error.
+
+#### D Flip-Flop VHDL
+
+---
+
+# Finite State Machines
