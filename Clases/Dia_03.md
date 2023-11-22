@@ -273,4 +273,52 @@ you can not mix types in VHDL, there will present a error.
 
 ---
 
-# Finite State Machines
+# Verification and TestBench
+
+It is important part of the design process, helps to know if the design works as I spect.
+
+The structure of verification code is the follow:
+
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;                -- Define library, same as in VHDL source code
+
+entity test_my_sesign is
+en test_my_design;                          -- VHDL model without entity interface
+
+architecture testbench of test_my_design is
+  component my_design is
+    port (a, b : in  std_logic;
+          x, y : out std_logic);
+  end component;                            -- Component declaration of the device to test
+
+  signal as, bs : std_logic:='1';  
+  signal xs, ys : std_logic;                -- Define signal names, the initialization of value just works in test, not in synth.
+
+begin
+  uut : my_design port map
+        (a=>as, b=>bs, x=>xs, y=>ys);       -- Instatiate UUT in testbench
+
+    as <= not(as) after 50 us;  
+
+  process begin
+    bs <= '1'; wait for 75 us;
+    bs <= '0'; wait for 25 us;
+  end process;
+
+end testbench;                              -- Define the stimulus for the inputs of the cmponent under test
+```
+
+#### Wait statements
+
+`wait for` is to wait for certain time and going
+
+`wait on` is to wait until some condition occurs
+
+#### Period signal generation
+
+this generates signal clocks with a specific period of time
+
+#### Data generation
+
+This assign values to the variables, can be use with wait to stop the execution for a period of time
