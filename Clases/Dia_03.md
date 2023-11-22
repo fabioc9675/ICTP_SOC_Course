@@ -283,7 +283,7 @@ The structure of verification code is the follow:
 library ieee;
 use ieee.std_logic_1164.all;                -- Define library, same as in VHDL source code
 
-entity test_my_sesign is
+entity test_my_design is
 end test_my_design;                         -- VHDL model without entity interface
 
 architecture testbench of test_my_design is
@@ -322,3 +322,5 @@ this generates signal clocks with a specific period of time
 #### Data generation
 
 This assign values to the variables, can be use with wait to stop the execution for a period of time
+
+`assert` is use to compare the output with an spected value, in case it is not, can to be generate a `report severity ERROR;`
