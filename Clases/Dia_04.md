@@ -139,3 +139,15 @@ For now, it is not possible to interact with the Scheduller, one way is modify t
 | `xQueueSend(...)`        | Send data to Queue                |
 | `xQueueReceive(...)`     | Receive data from Queue           |
 | `xSemaphoreTake(...)`    | Takes the semaphore token         |
+
+---
+
+# LwIP
+
+it is a software support to implement Ethernet communication protocols as TCP/UDP
+
+Xilinx provide a library that can be include in the stack to use the functions and interact with the peripheral.
+
+![1700737552776](image/Dia_04/1700737552776.png)
+
+With this, it is possible to make a Ethernet connection with the Hardware and transmit data using the Ethernet capabilities.
