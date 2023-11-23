@@ -1,0 +1,20 @@
+ PARAMETER VERSION = 2.2.0
+
+
+BEGIN OS
+ PARAMETER OS_NAME = freertos10_xilinx
+ PARAMETER STDIN =  *
+ PARAMETER STDOUT = *
+ PARAMETER total_heap_size = 262144
+END
+
+BEGIN LIBRARY
+ PARAMETER LIBRARY_NAME = lwip211
+ PARAMETER api_mode = SOCKET_API
+ PARAMETER mem_size = 262144
+ PARAMETER pbuf_pool_size = 2048
+ PARAMETER tcp_mss = 2048
+ PARAMETER tcp_snd_buf = 16384
+ PARAMETER lwip_dhcp = false
+ PARAMETER ipv6_enable = false
+END

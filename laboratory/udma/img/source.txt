@@ -1,0 +1,32 @@
+// request 
+
+bf([
+  {bits: 32,  name: 'command type', type: 1},
+
+  {bits: 32,  name: 'parameters: one word each', type: 2},
+  {bits: 32,  name: 'data: only if required by the command', attr: ['Read register: reg', 'Write register: reg, data', 'Read FIFO: N', 'Write FIFO: N, data', 'Read RAM: addr, N, inc', 'Write RAM: addr, data, N, inc'], type: 3},
+], {
+  bits: 96,
+  lanes: 3,
+  compact: true,
+  label: {right: ['Reserved 0-9','Type dep.']},
+  hflip: true,
+  hspace: width,
+})
+
+// response
+
+bf([
+  {bits: 32,  name: 'error code', type: 4},
+
+  {bits: 32,  name: 'N: data count', type: 5},
+  {bits: 32,  name: 'data: only if data count > 0', type: 6},
+], {
+  bits: 96,
+  lanes: 3,
+  compact: true,
+  hflip: true,
+  hspace: width,
+})
+
+env: https://observablehq.com/@drom/bitfield-testbox?collection=@drom/bitfield
