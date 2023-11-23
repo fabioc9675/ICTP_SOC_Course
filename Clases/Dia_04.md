@@ -63,7 +63,7 @@ Zynq-7000 support a lot of systems
 - Open Source FreeRTOS
   - Light-weight real-time OS
 
-**[Operating Systems](de.wikipedia.org/wiki/FreeRTOS) <-> [Ethernet TCP/IP](lwip.wikia.com/wiki/LwIP_Wiki) <-> [Filesystem](http://elm-chan.org/fsw/ff/00index_e.html)**
+**[Operating Systems](https://www.freertos.org) <-> [Ethernet TCP/IP](https://lwip.wikia.com/wiki/LwIP_Wiki) <-> [Filesystem](http://elm-chan.org/fsw/ff/00index_e.html)**
 
 FreeRTOS born in 2003 and initially conceived for microcontrollers
 
