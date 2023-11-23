@@ -151,3 +151,12 @@ Xilinx provide a library that can be include in the stack to use the functions a
 ![1700737552776](image/Dia_04/1700737552776.png)
 
 With this, it is possible to make a Ethernet connection with the Hardware and transmit data using the Ethernet capabilities.
+
+---
+
+The implementation was made in the laboratory using the instructions provided in the class section.
+
+
+# UDMA Laboratory
+
+Use ComBlock, FreeRTOS and UDMA works works like an interface between python in PC and the FPGA Hardware
