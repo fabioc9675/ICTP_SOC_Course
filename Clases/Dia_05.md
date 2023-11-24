@@ -164,3 +164,54 @@ This process is relativelly simple, it involves the writting of `C` code:
 ![1700825926462](image/Dia_05/1700825926462.png)
 
 ---
+
+# HLS Demo
+
+In this project we will use `Vitis HLS` environment.
+
+- Load the files provided in the top
+- the period of execution need to be `10`
+- the part specification is `xc7z020clg484-3`
+
+It is necessary to specify the **Top Function** in the project settings and once the code is compiled, an `impl1` folder appears where the implementation is and the `VHDL` code of the synthesis are allocated.
+
+- Estimate clock cycle
+- Estimate FIR latency
+
+![1700833309137](image/Dia_05/1700833309137.png)
+
+The Shift Loop takes `Iteration latency = 5` cycles in the execution and this repeats `Trip count = 181` times, (related with filter quantity of coefs), this provide a latency of `905` cycles.
+
+To view the Schedule Viewer, go to Tools --> Schedule Viewer.
+
+![1700834331746](image/Dia_05/1700834331746.png)
+
+This shows the sequence of execution and roouting of the signals, also the time dependency between different operations.
+
+To add Partition Pragma, just go to Directive --> right click on shift_reg, and in the menu, select ARRAY_PARTITION
+
+![1700834575162](image/Dia_05/1700834575162.png)
+
+Click ok and recompile.
+
+This optimize the latency in the HLS synthesis.
+
+Internal loop takes 4 cycles, but every cycle can to begin a new loop, meaning in a lower iterations in the execution.
+
+![1700834787112](image/Dia_05/1700834787112.png)
+
+The difference here is the quantity of FlipFlops (FF) and LUTs used, now the quantity of hardware needed increases in order to reduce the time, you need to decide if you need to optimice time or space in the design. It is an important topic to consider.
+
+### Addition of AXI Bus
+
+Now in the directives add interface as axi, just like previous directive.
+
+![1700836073836](image/Dia_05/1700836073836.png)
+
+After adding the directives, you just need to compile again, and now in Solution --> Export RTL to syntezise the RTL and the IPCore
+
+---
+
+# Laboratory 4
+
+## Data acquisition systems
