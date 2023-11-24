@@ -117,6 +117,50 @@ void fir (data_t *y, coef_t c[4], data_t x)
 
 You need to avoid the dependencies, because this reduce the possibility of parallelization:
 
-![1700822535591](image/Dia_05/1700822535591.png)
+```c
+...
+for (int i = 0; i < N; i++) {
+  value = input.read();
+  sum += value;
+  window[i] = value;
+}
+output.write(sum / N);
+
+moving_average_label0:while (!input.empty()) {
+  float new_val = input.read();
+  sum = sum -window[0] + new_val;
+  /*
+  sum = 0;
+  for (int i = 0; i < N; i++) 
+    sum += window[i];
+  sum += new_val;
+  */
+  
+  // Shift the new window and add the new value
+  moving_average_label1:for (int i = 1; i < N; i++) {
+    window[i - 1] = window[i];
+  }
+  window[N - 1] = new_val;
+
+  output.write(sum / N);
+}
+...
+```
 
 In the previous code, the `sum` uncommented part is neede for the processor, without this the code does not run in the processor, but for HLS, the comment part is neccesary because it eliminates the dependency of prevous iterations and can make a parallel synthesis, the local loop, internal loop reduce the dependency of previous iterations. **It is something to have in mind when you are designing HLS hardware**.
+
+This is the way to implement the communication interface 
+
+![1700824514744](image/Dia_05/1700824514744.png)
+
+### Validation and verification
+
+This process is relativelly simple, it involves the writting of `C` code:
+
+![1700824950657](image/Dia_05/1700824950657.png)
+
+##### Some implementation example
+
+![1700825926462](image/Dia_05/1700825926462.png)
+
+---
