@@ -201,3 +201,90 @@ In the design and routing of LVDS you need control impedance to reduce the rippl
 - Failure to do Design for Electromagnetic Compatibilityn(DfEMC)
 
 ---
+
+# Project 1
+
+## Digital Pulse Processing for Isotope identification
+
+Author: Mladen BOGOVAC
+
+The aim of these kind of device is to identify and capture the energy spectra of the events.
+
+This is based on counting of events.
+
+![1701090904123](image/Dia_06/1701090904123.png)
+
+These events has prevalence in low energies. The Compton effect is dominant in low energies.
+
+The process of identification is mainly based on shape identification.
+
+![1701091501443](image/Dia_06/1701091501443.png)
+
+The capture of this light is made by some devices called **Photo Multipliers**, they are based on Diodo of silicium with different dopages.
+
+![1701091572055](image/Dia_06/1701091572055.png)
+
+### Scintillators resolution
+
+This deppends on:
+
+- Gamma ray absortion and light generation
+- Light collection at photo catode - around 75% of them reaches photocathode
+- Photoelectron production at photocathode.
+
+| Scintillator                                           | Semiconductor                                          |
+| ------------------------------------------------------ | ------------------------------------------------------ |
+| Electronic circuit noise (belw keV)                    | Electronic circuits noise                              |
+| Statistical Variation in production of photo electrons | Statistical variation in production of charge carriers |
+| Intrinsic resolution of Scintillator                   |                                                        |
+
+for low energy the noise is dominant from **electronics**, in high energies the noise is dominant from **form factors**
+
+$$
+FWHM=\sqrt{EFW+O_m}
+$$
+
+![1701092152107](image/Dia_06/1701092152107.png)
+
+Germanium has better performance in the detection of Gamma radiation.
+
+Advantages of electronics design.
+
+![1701092487336](image/Dia_06/1701092487336.png)
+
+## Silicon Photo Multipliers (SiPM)
+
+**Advantages**:
+
+- Low Voltage operation (25V-30V)
+- Insensitive to magnetic fields
+- High gains (10^6)
+- Mechanically compact
+
+**Disadvantages**:
+
+- Temperature dependent gain
+- Noise at higher temperatures
+- cost per cm^2
+
+The dependency with temperature can be compensate with voltage source, it is compensable.
+
+But the current is not compensable.
+
+### Analog vs Digital chain
+
+![1701093188597](image/Dia_06/1701093188597.png)
+
+Preamplifier configuration
+
+![1701093742025](image/Dia_06/1701093742025.png)
+
+![1701094097740](image/Dia_06/1701094097740.png)
+
+![1701094633427](image/Dia_06/1701094633427.png)
+
+---
+
+# Laboratory 5
+
+## Project solution
