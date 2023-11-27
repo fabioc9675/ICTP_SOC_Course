@@ -38,3 +38,33 @@ the drone flys two times
 They also work in Neutrino detection.
 
 ![1701074994315](image/Dia_06/1701074994315.png)
+
+These are the facilities of the laboratory.
+
+![1701075182669](image/Dia_06/1701075182669.png)
+
+#### Modes of collaboration/interaction with the IAEA
+
+**Contract types**
+
+- Internship (3-12 months), non-extendable, not repeatable.
+- IAEA Marie Sklodowska Curie fellowship (3-12 months)
+- Fellowships (via Technical Cooperation Department)
+- PhD Consultancies and full consultancies
+  - Home based assigments
+  - Expert missions
+
+**Event types**
+
+- Technical meetings
+- Training events
+- Consultancy meetings
+
+**Formal Collaboration Types**
+
+- Practical arrangements
+- MoU
+- Collaboration agreements
+- Collaboration centres
+
+---
