@@ -1,0 +1,18 @@
+verilog xil_defaultlib --include "/opt-ictp/Xilinx/arg2/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../project1_part1.gen/sources_1/bd/bd_labProject_part1/ipshared/7698" --include "../../../../project1_part1.gen/sources_1/bd/bd_labProject_part1/ipshared/ec67/hdl" --include "../../../../project1_part1.gen/sources_1/bd/bd_labProject_part1/ipshared/ee60/hdl" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_CLK_GEN_0/bd_labProject_part1_CLK_GEN_0_clk_wiz.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_CLK_GEN_0/bd_labProject_part1_CLK_GEN_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_util_vector_logic_0_0/sim/bd_labProject_part1_util_vector_logic_0_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_xlconstant_0_0/sim/bd_labProject_part1_xlconstant_0_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_crossLevelTrigger_0/sim/bd_labProject_part1_crossLevelTrigger_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_oneShotTimer_0/sim/bd_labProject_part1_oneShotTimer_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_pulsePositiveEdge_0/sim/bd_labProject_part1_pulsePositiveEdge_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_ringBuffer_0/sim/bd_labProject_part1_ringBuffer_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_timerAlwaysOn_0/sim/bd_labProject_part1_timerAlwaysOn_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_util_vector_logic_0_1/sim/bd_labProject_part1_util_vector_logic_0_1.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_processing_system7_0_0/sim/bd_labProject_part1_processing_system7_0_0.v" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_auto_pc_0/sim/bd_labProject_part1_auto_pc_0.v" \
+"../../../bd/bd_labProject_part1/sim/bd_labProject_part1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
