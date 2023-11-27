@@ -144,7 +144,7 @@ It also can be implemented in systems like **PYNQ**, **KRIA** and **ZedBoard**.
 - It contributes in the development of a fully ML architecture deployment.
 - The `ComBlock` allows the access to the communication easily.
 
-# Gaining a Deeper Insight Into tje Project Lab Setuop 
+# Gaining a Deeper Insight Into tje Project Lab Setuop
 
 ## System and Hardware Perspective
 
