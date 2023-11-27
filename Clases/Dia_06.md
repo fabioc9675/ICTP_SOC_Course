@@ -144,8 +144,60 @@ It also can be implemented in systems like **PYNQ**, **KRIA** and **ZedBoard**.
 - It contributes in the development of a fully ML architecture deployment.
 - The `ComBlock` allows the access to the communication easily.
 
+---
+
 # Gaining a Deeper Insight Into tje Project Lab Setuop
 
 ## System and Hardware Perspective
 
 Author: Nikola Jovalekic
+
+THe preparation of a experimental setup for particles detection needs to consider a lot of parts inside the design. Between them it is important to consider the acquisition, preamplification, conditioning, and all the analogic chain to prepare the data, after that, the constrains in the acquisition part related with speed of acquisition, the voltage resolution. Also the basis configuration of the SoC as for example the voltage sources and the clock sources.
+
+![1701082544768](image/Dia_06/1701082544768.png)
+
+It is important to consider the environment where the system will operate, it is not the same the requirements for a laboratory environment, where some of the conditions are controlled, instead of a outside environment where there are a lot of variables out of control, for example the power source need to be considered and designed different for both environments.
+
+It is different the power sourcing for analog and digital side, digital can be powered with Switched regulators, but in Analog Front End it is recomended to use Low Drop Out regulators, their are linear regulators an reduce the ripple noise in the analog chain.
+
+### Detector setup architecture
+
+![1701082573035](image/Dia_06/1701082573035.png)
+
+### How do we come to the physical device starting from detailed block diagram
+
+- Component selection based on requirements specification
+- Inspection of the design files shared by component manufacturer
+- Analysis of the power consumption of the key components
+- Drafting power supplies tree.
+- Finding simulation models for the power supply ICs and performing design verification
+
+##### Deveopment of these steps
+
+- Read a lot of datasheets.
+- Design libraries of components to map the peripherals, both parts the schematic view and the footprint.
+
+![1701083230514](image/Dia_06/1701083230514.png)
+
+- Design the complete schematic of the system.
+
+![1701083417767](image/Dia_06/1701083417767.png)
+
+- After all the verifications and when you think everything os good, you can to jump to the physical world.
+
+  ![1701084127755](image/Dia_06/1701084127755.png)
+
+In the design and routing of LVDS you need control impedance to reduce the ripple and the signal bounces to `100 ohms`. Also you need to control the crosstalk. the propagation of capacitive effect between differential pairs.
+
+![1701084247787](image/Dia_06/1701084247787.png)
+
+- Production files encompass gerber files, NC drill file, and stackuo information.
+
+### Design errors and common mistakes
+
+- Failure to do Design for Logistic (DfL)
+- Failure to do Design for Manufacturability (DfM)
+- Failure to do Design for Testability (DfT)
+- Failure to do Design for Electromagnetic Compatibilityn(DfEMC)
+
+---
