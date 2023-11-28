@@ -138,3 +138,69 @@ The synchronization and the transport is managed by a scheduler algoritm. there 
 ![1701167224305](image/Dia_07/1701167224305.png)
 
 ---
+
+# Micro- and Nano- Fabrication and Quantum Technology
+
+Author: Richard HALL-WILTON
+
+## Data Acquisition Systems
+
+Scalability: the Moore's Law.
+
+![1701168177355](image/Dia_07/1701168177355.png)
+
+The industry of microchips production begins to have an important role in the world.
+
+https://youtu.be/MGxjOQsIs9k?si=H4YKMXYfkhDRL70V
+
+>  **Ubiquitous Sensors**: They are in our everyday devices as for example the SmartPhones.
+
+### FBK Sensors and device centre
+
+Locate between Austria and Switzerland border.
+
+**Profile**: Fondazione Bruno Kessler (FBK)
+
+#### Sensor and Devices Centre
+
+**Sensors**: A device that is used to record that something is present or that there are changes in something
+
+**Devices**: An object or machine that has been invented for a particular purpose, an electronic device.
+
+> *Capabilities are only limited by creativity*
+
+They contribute on:
+
+- Quantum technology
+- Space industry
+- Industry
+- Training
+
+They are specialized on Integrated optics, SiPM, MEMS.
+
+![1701168897390](image/Dia_07/1701168897390.png)
+
+## FrontEnd Data Acquisition
+
+![1701169853538](image/Dia_07/1701169853538.png)
+
+![1701169985251](image/Dia_07/1701169985251.png)
+
+## Quantum Technology
+
+Why should you care?
+
+- TRL 1-4 is not the primary concern for society
+- 2nd quantum revolution will change everything (but not clear when)
+- Being informed and aware is the first step in preparation
+- Quantum computing will break current digital security (not clear when)
+- Being ready and migrating protocols essential
+- Quantum communication field is therefore relevant and important
+- Quantum sensing can transform sensitivity
+- Quantum imaging can transform imaging capabilities
+
+![1701170297818](image/Dia_07/1701170297818.png)
+
+**EPIQUS-QT** Simultaion platform: It is a quantum simulation platform on a chip.
+
+---
