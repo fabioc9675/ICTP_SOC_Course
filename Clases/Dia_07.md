@@ -74,3 +74,67 @@ How the Readout electronics is configurate?
 ![1701162497079](image/Dia_07/1701162497079.png)
 
 ---
+
+# Switch architectures for Data Center networks
+
+Author: Piero CASTOLDI
+
+Director of Scoula Superiore Sant'Anna in Pissa. FPhotonics and integrated circuits.
+
+> Instituto comprises telecommunications, working in different segments of tlecom, 5g, mobile, Also cyberphysical systems. Artificial Intelligence, Robotics, Photonics as the evolution of electronics, based on the transport of photons. 
+>
+> They have a PhD program in photonics, and they are open for applications.
+
+## Data Center Architectures
+
+Server racks in Google DC
+
+Classical architecture is made as blades, now there is a hierarchical architecture
+
+- THe interconnection is made by switchs
+
+The two times redundancy is applyed to the architecture
+
+- Distributed architecture:
+
+![1701165236848](image/Dia_07/1701165236848.png)
+
+#### Difference between electronics and photonics
+
+Photonics allows high speed but not memory, you can not store information in photonics domain.
+
+![1701165409732](image/Dia_07/1701165409732.png)
+
+Other difference is that the time domain is possible both in electronics and photonics, but wavelength domain are also available in both but in electronics with a lot of limitations.
+
+![1701165561795](image/Dia_07/1701165561795.png)
+
+In communication architecture is necessary to do switch between electronics and photonics, photonics is so usefull for high speed information transmition, but still it is necessary electronics to make a information storage and persistance.
+
+**Interesting topic: Photonics in circuit**
+
+### Types of architectures
+
+![1701165992259](image/Dia_07/1701165992259.png)
+
+##### Typical scheme to transform from pohotonics to electronics
+
+In this when there is a photon in the photodiode, this produce a current thart moves through the resistor and produce a voltage drop in the circuit, this can be interpretate as a input signal as well.
+
+![1701166428776](image/Dia_07/1701166428776.png)
+
+#### Other architecture
+
+![1701166509717](image/Dia_07/1701166509717.png)
+
+There is a central wave guide in a microscale, also there are microrings that can transfer the optical power into the ring. other part is to change the temperature inside. the ring works to couple of decouple.
+
+![1701166705763](image/Dia_07/1701166705763.png)
+
+They reconfigurates itself to move data from source to a sink in different space directions.  
+
+The synchronization and the transport is managed by a scheduler algoritm. there are a lot of these units in the system.
+
+![1701167224305](image/Dia_07/1701167224305.png)
+
+---
