@@ -251,3 +251,31 @@ The Flicker noise is no important, has not too much influence in the information
 ### The Shaper
 
 ![1701179322843](image/Dia_07/1701179322843.png)
+
+The triangule shape describe some part of the information include in the pulse.
+
+#### Comparison between shapers
+
+![1701179990185](image/Dia_07/1701179990185.png)
+
+#### Synthesis of a Trapezoidal shaper
+
+
+
+![1701180106936](image/Dia_07/1701180106936.png)
+
+![1701180116774](image/Dia_07/1701180116774.png)
+
+![1701180126200](image/Dia_07/1701180126200.png)
+
+In the FPGA, it is necessary to work in the discrete domain, here the Z-Transform takes importance in the development and calculation of discrete systems.
+
+![1701180342170](image/Dia_07/1701180342170.png)
+
+![1701180547512](image/Dia_07/1701180547512.png)
+
+### Design of the filter
+
+![1701181662163](image/Dia_07/1701181662163.png)
+
+---
