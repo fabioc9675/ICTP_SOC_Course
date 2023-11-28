@@ -287,3 +287,15 @@ In the FPGA, it is necessary to work in the discrete domain, here the Z-Transfor
 We need to use these parameters.
 
 ![1701182732481](image/Dia_07/1701182732481.png)
+
+#### Experimental setup
+
+![1701183228734](image/Dia_07/1701183228734.png)
+
+##### Shaper design
+
+![1701183321291](image/Dia_07/1701183321291.png)
+
+After this we need to storage the maximum value into the histogram.
+
+![1701183889624](image/Dia_07/1701183889624.png)
