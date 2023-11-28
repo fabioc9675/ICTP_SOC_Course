@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/bd_Lab4_ADC_DAC/ip/bd_Lab4_ADC_DAC_c_counter_binary_0_0/sim/bd_Lab4_ADC_DAC_c_counter_binary_0_0.vhd" \
+"../../../bd/bd_Lab4_ADC_DAC/ip/bd_Lab4_ADC_DAC_axi_smc_0/bd_0/ip/ip_1/sim/bd_f406_psr_aclk_0.vhd" \
+"../../../bd/bd_Lab4_ADC_DAC/ipshared/7b64/hdl/axil.vhdl" \
+"../../../bd/bd_Lab4_ADC_DAC/ipshared/7b64/hdl/axif.vhdl" \
+"../../../bd/bd_Lab4_ADC_DAC/ipshared/7b64/hdl/tdpram.vhdl" \
+"../../../bd/bd_Lab4_ADC_DAC/ipshared/7b64/hdl/graysync.vhdl" \
+"../../../bd/bd_Lab4_ADC_DAC/ipshared/7b64/hdl/fifo.vhdl" \
+"../../../bd/bd_Lab4_ADC_DAC/ipshared/7b64/hdl/comblock.vhdl" \
+"../../../bd/bd_Lab4_ADC_DAC/ipshared/7b64/hdl/axi_comblock.vhdl" \
+"../../../bd/bd_Lab4_ADC_DAC/ip/bd_Lab4_ADC_DAC_comblock_0_0/sim/bd_Lab4_ADC_DAC_comblock_0_0.vhd" \
+"../../../bd/bd_Lab4_ADC_DAC/ip/bd_Lab4_ADC_DAC_rst_ps7_0_100M_0/sim/bd_Lab4_ADC_DAC_rst_ps7_0_100M_0.vhd" \
+
+nosort

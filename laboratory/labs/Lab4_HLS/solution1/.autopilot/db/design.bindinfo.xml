@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln25_fu_841_p2" SOURCE="../FRincon/fir/firTop.cpp:25" VARIABLE="icmp_ln25" MODULE="fir_Pipeline_Shift_Accum_Loop" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mux" ID="" IMPL="auto" LATENCY="0" OPTYPE="mux" PRAGMA="" RTLNAME="mux_1818_32_1_1_U1" SOURCE="../FRincon/fir/firTop.cpp:29" VARIABLE="data_1" MODULE="fir_Pipeline_Shift_Accum_Loop" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="0" OPTYPE="mul" PRAGMA="" RTLNAME="mul_12s_32s_32_1_1_U2" SOURCE="../FRincon/fir/firTop.cpp:32" VARIABLE="mul_ln32" MODULE="fir_Pipeline_Shift_Accum_Loop" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="2" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="acc_1_fu_3047_p2" SOURCE="../FRincon/fir/firTop.cpp:32" VARIABLE="acc_1" MODULE="fir_Pipeline_Shift_Accum_Loop" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln21_fu_857_p2" SOURCE="../FRincon/fir/firTop.cpp:21" VARIABLE="add_ln21" MODULE="fir_Pipeline_Shift_Accum_Loop" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="firCoeff_U" SOURCE="" VARIABLE="firCoeff" MODULE="fir_Pipeline_Shift_Accum_Loop" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="1" URAM="0"/>
+</BindInfo>

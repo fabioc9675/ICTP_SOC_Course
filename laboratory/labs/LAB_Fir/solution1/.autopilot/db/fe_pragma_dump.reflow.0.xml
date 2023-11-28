@@ -1,0 +1,9 @@
+<pragmas>
+<pragma file="LAB_Fir/src/firTop.cpp" line="56" pragmaType="dataflow" parentfunction="fir" disable_start_propagation="0"/>
+<pragma file="LAB_Fir/src/firTop.cpp" line="73" pragmaType="pipeline" parentfunction="fir" off="0" ii="1" rewind="0" style=""/>
+<pragma file="LAB_Fir/src/firTop.cpp" line="57" pragmaType="array_partition" parentfunction="fir" dim="1" factor="0" mode="complete" dynamic="0" variable="firCoeff"/>
+<pragma file="LAB_Fir/src/firTop.cpp" line="59" pragmaType="interface" parentfunction="fir" mode="ap_ctrl_hs" port="return" name=""/>
+<pragma file="LAB_Fir/src/firTop.cpp" line="60" pragmaType="interface" parentfunction="fir" mode="axis" port="y" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="LAB_Fir/src/firTop.cpp" line="61" pragmaType="interface" parentfunction="fir" mode="axis" port="x" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="LAB_Fir/src/firTop.cpp" line="65" pragmaType="array_partition" parentfunction="fir" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ3firPiS_E9shift_reg"/>
+</pragmas>

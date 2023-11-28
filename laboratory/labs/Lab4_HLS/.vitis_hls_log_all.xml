@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="Lab4_HLS" solutionName="solution1" date="2023-11-24T14:23:55.328+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ3firPiS_E9shift_reg_179' is power-on initialization." projectName="Lab4_HLS" solutionName="solution1" date="2023-11-24T14:23:54.863+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ3firPiS_E9shift_reg_178' is power-on initialization." projectName="Lab4_HLS" solutionName="solution1" date="2023-11-24T14:23:54.850+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ3firPiS_E9shift_reg_177' is power-on initialization." projectName="Lab4_HLS" solutionName="solution1" date="2023-11-24T14:23:54.837+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ3firPiS_E9shift_reg_176' is power-on initialization." projectName="Lab4_HLS" solutionName="solution1" date="2023-11-24T14:23:54.827+0000" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,65 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.441803",
+   "Default View_TopLeft":"-561,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1940 -y 870 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1940 -y 890 -defaultsOSRD
+preplace port port-id_adc_data_in -pg 1 -lvl 0 -x 0 -y 810 -defaultsOSRD
+preplace port port-id_adc_sck -pg 1 -lvl 6 -x 1940 -y 970 -defaultsOSRD
+preplace port port-id_dac_mosi_a -pg 1 -lvl 6 -x 1940 -y 750 -defaultsOSRD
+preplace port port-id_dac_mosi_b -pg 1 -lvl 6 -x 1940 -y 770 -defaultsOSRD
+preplace port port-id_dac_sclk -pg 1 -lvl 6 -x 1940 -y 790 -defaultsOSRD
+preplace portBus adc_cs_n -pg 1 -lvl 6 -x 1940 -y 950 -defaultsOSRD
+preplace portBus dac_ss_n -pg 1 -lvl 6 -x 1940 -y 810 -defaultsOSRD
+preplace inst PMOD_AD1 -pg 1 -lvl 5 -x 1750 -y 980 -defaultsOSRD
+preplace inst PMOD_DA1 -pg 1 -lvl 5 -x 1750 -y 770 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -x 900 -y 280 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 140 -y 1150 -defaultsOSRD
+preplace inst comblock_0 -pg 1 -lvl 4 -x 1350 -y 430 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 460 -y 910 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 460 -y 1120 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -x 1350 -y 710 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 900 -y 160 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 900 -y 60 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -x 460 -y 740 -defaultsOSRD
+preplace inst fir_0 -pg 1 -lvl 3 -x 900 -y 720 -defaultsOSRD
+preplace netloc c_counter_binary_0_Q 1 3 3 1140 180 NJ 180 1920
+preplace netloc clk_wiz_0_locked 1 1 1 N 1160
+preplace netloc comblock_0_fifo_afull_o 1 3 1 1150 450n
+preplace netloc comblock_0_ram_data_o 1 3 2 1140 800 NJ
+preplace netloc comblock_0_reg0_o 1 4 1 1580 420n
+preplace netloc comblock_0_reg1_o 1 4 1 1600 440n
+preplace netloc comblock_0_reg2_o 1 4 1 1570 460n
+preplace netloc data_in_0_0_1 1 0 5 NJ 810 NJ 810 670J 860 NJ 860 1560J
+preplace netloc pmod_adc_ad7476a_0_cs_n 1 5 1 NJ 950
+preplace netloc pmod_adc_ad7476a_0_sck 1 5 1 NJ 970
+preplace netloc pmod_dac_ad7303_0_mosi_0 1 5 1 NJ 750
+preplace netloc pmod_dac_ad7303_0_mosi_1 1 5 1 NJ 770
+preplace netloc pmod_dac_ad7303_0_sclk 1 5 1 NJ 790
+preplace netloc pmod_dac_ad7303_0_ss_n 1 5 1 NJ 810
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 4 260 800 670 360 1120 190 1590
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 3 20 1010 NJ 1010 670
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 30 1080 250 1020 660
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 2 3 680 570 1100 810 1540
+preplace netloc rst_ps7_0_100M_peripheral_reset 1 2 3 690J 850 NJ 850 1560
+preplace netloc s_axis_tdata_1 1 2 4 710 840 NJ 840 1550J 660 1910
+preplace netloc util_vector_logic_0_Res 1 2 4 700 900 NJ 900 1600J 880 1900
+preplace netloc util_vector_logic_0_Res1 1 3 2 1090J 770 1540
+preplace netloc xlconstant_0_dout 1 3 1 1100J 160n
+preplace netloc xlconstant_1_dout 1 3 1 1110J 60n
+preplace netloc xlconstant_2_dout 1 2 1 NJ 740
+preplace netloc fir_1_y_TVALID 1 3 1 1110 390n
+preplace netloc fir_1_y_TDATA 1 3 1 1130 410n
+preplace netloc axi_smc_M00_AXI 1 3 1 N 270
+preplace netloc axi_smc_M01_AXI 1 3 1 1090 250n
+preplace netloc processing_system7_0_DDR 1 2 4 NJ 870 NJ 870 NJ 870 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 NJ 890 NJ 890 NJ 890 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 660 260n
+levelinfo -pg 1 0 140 460 900 1350 1750 1940
+pagesize -pg 1 -db -bbox -sgen -140 0 2090 1220
+"
+}
+0

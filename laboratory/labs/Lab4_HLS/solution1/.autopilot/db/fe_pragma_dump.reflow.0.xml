@@ -1,0 +1,6 @@
+<pragmas>
+<pragma file="../FRincon/fir/firTop.cpp" line="8" pragmaType="interface" parentfunction="fir" mode="ap_hs" port="" name="" register="0"/>
+<pragma file="../FRincon/fir/firTop.cpp" line="9" pragmaType="interface" parentfunction="fir" mode="axis" port="y" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../FRincon/fir/firTop.cpp" line="10" pragmaType="interface" parentfunction="fir" mode="axis" port="x" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../FRincon/fir/firTop.cpp" line="13" pragmaType="array_partition" parentfunction="fir" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ3firPiS_E9shift_reg"/>
+</pragmas>
