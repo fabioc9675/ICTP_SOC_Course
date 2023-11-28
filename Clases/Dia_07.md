@@ -29,7 +29,6 @@ About the sensor:
 
 ### Structure of a Detector
 
-
 ### Pipeline
 
 - **Data acquisition**
@@ -81,7 +80,7 @@ Author: Piero CASTOLDI
 
 Director of Scoula Superiore Sant'Anna in Pissa. FPhotonics and integrated circuits.
 
-> Instituto comprises telecommunications, working in different segments of tlecom, 5g, mobile, Also cyberphysical systems. Artificial Intelligence, Robotics, Photonics as the evolution of electronics, based on the transport of photons. 
+> Instituto comprises telecommunications, working in different segments of tlecom, 5g, mobile, Also cyberphysical systems. Artificial Intelligence, Robotics, Photonics as the evolution of electronics, based on the transport of photons.
 >
 > They have a PhD program in photonics, and they are open for applications.
 
@@ -131,7 +130,7 @@ There is a central wave guide in a microscale, also there are microrings that ca
 
 ![1701166705763](image/Dia_07/1701166705763.png)
 
-They reconfigurates itself to move data from source to a sink in different space directions.  
+They reconfigurates itself to move data from source to a sink in different space directions.
 
 The synchronization and the transport is managed by a scheduler algoritm. there are a lot of these units in the system.
 
@@ -153,7 +152,7 @@ The industry of microchips production begins to have an important role in the wo
 
 https://youtu.be/MGxjOQsIs9k?si=H4YKMXYfkhDRL70V
 
->  **Ubiquitous Sensors**: They are in our everyday devices as for example the SmartPhones.
+> **Ubiquitous Sensors**: They are in our everyday devices as for example the SmartPhones.
 
 ### FBK Sensors and device centre
 
@@ -204,3 +203,51 @@ Why should you care?
 **EPIQUS-QT** Simultaion platform: It is a quantum simulation platform on a chip.
 
 ---
+
+# Project part 2
+
+### Detector resolution
+
+Resolution is full width and half maximum
+
+Why detector resolution is important?
+
+Allow make the quantitative analysis of the radioactivity of the sample.
+
+In X-Ray fluorecense.
+
+Gamma rays are originate from nlucleo
+
+![1701177644433](image/Dia_07/1701177644433.png)
+
+![1701177831468](image/Dia_07/1701177831468.png)
+
+In sillicon material, $110 eV$ is the maximum energy, but for germanium the energy is lower.
+
+One of the noise sources are the FET inside the detectors and DAQ electronics.
+
+Capacitance of the detector depends of the geometry also.
+
+![1701178335242](image/Dia_07/1701178335242.png)
+
+Capacitance of detector plus capacitance of wires and cables.
+
+The $ENC^2$ equation allows to know the total capacitance, and the different contributions to the noise.
+
+> **Trapezoidal shaper** collect time of the event
+>
+> **SemiGaussian shaper** is other popular shaper nowaday
+
+In nuclear detection is is usual to work in time domain.
+
+![1701178863866](image/Dia_07/1701178863866.png)
+
+It is common to use **Silicon Drift Detector**
+
+Your custom shaper can to keeping time where the noise is minimum, they provide the information of the system, also it do not affect the speed of the measurement. Trapezoidal shaper keep the event time.
+
+The Flicker noise is no important, has not too much influence in the information.
+
+### The Shaper
+
+![1701179322843](image/Dia_07/1701179322843.png)
