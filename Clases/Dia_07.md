@@ -279,3 +279,11 @@ In the FPGA, it is necessary to work in the discrete domain, here the Z-Transfor
 ![1701181662163](image/Dia_07/1701181662163.png)
 
 ---
+
+# Project 1 - Stage 2
+
+## Digital Pulse Processing for Isotope Identification
+
+We need to use these parameters.
+
+![1701182732481](image/Dia_07/1701182732481.png)
