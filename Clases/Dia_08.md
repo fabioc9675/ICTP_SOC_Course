@@ -179,3 +179,18 @@ They use:
 
 3. Load the comblock FIFO
 4. Read the solutions from the solver
+
+## Future works
+
+- More problems
+  - Quantum computer emulator
+  - High-level trigger
+- FPGA dedicated network
+  - Modular interface for GTH, HP, and HD
+- Explore distributed computing paradigms exploring direct communication between FPGAs
+
+![1701264441797](image/Dia_08/1701264441797.png)
+
+---
+
+# Project Lab 1.3: Baseline Restorer and Pile-Up Rejection
