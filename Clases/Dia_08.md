@@ -76,3 +76,37 @@ In a circuit oof diameter $n$ (gates) the number of wires *crossing* the diamete
 ### The real AMD configurable logic block
 
 ![1701248639983](image/Dia_08/1701248639983.png)
+
+## Example of use of the FloPoCo
+
+The information of the FloPoCo is available in the [Official repository](https://gitlab.inria.fr/flopoco/flopoco). All the documentation of the project is available on [The official webpage](http://flopoco.org).
+
+This is the [repository under development](https://gitlab.com/flopoco/flopoco).
+
+All the documentation and instruction how to install are available [here](https://gitlab.inria.fr/flopoco/flopoco/-/tree/master/doc/web?ref_type=heads).
+
+![1701251262644](image/Dia_08/1701251262644.png)
+
+## Division by 3
+
+![1701252210703](image/Dia_08/1701252210703.png)
+
+![1701252316607](image/Dia_08/1701252316607.png)
+
+#### MonteCarlo simulation
+
+![1701253181686](image/Dia_08/1701253181686.png)
+
+### Machine Learning and Artificial Intelligence
+
+FloPoCo can to accelerate the process of calculation of complex operations in Artificial Intelligence applications
+
+![1701253468031](image/Dia_08/1701253468031.png)
+
+![1701253594334](image/Dia_08/1701253594334.png)
+
+### Conclusions
+
+- Each platform nrequires a different approach of arithmetics.
+
+---
