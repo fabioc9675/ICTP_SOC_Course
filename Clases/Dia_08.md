@@ -110,3 +110,72 @@ FloPoCo can to accelerate the process of calculation of complex operations in Ar
 - Each platform nrequires a different approach of arithmetics.
 
 ---
+
+# HyperFPGA: Experimental Infrastructure for Reconfigurable Supercomputing
+
+Author: Werner FLORIAN
+
+email: werner_florian@live.com
+
+## Result of his work as PhD student on ICTP
+
+CPU, GPU or PFGA?
+
+![1701254055819](image/Dia_08/1701254055819.png)
+
+#### Distribution of the better tool for different dwards
+
+![1701254203155](image/Dia_08/1701254203155.png)
+
+They builkd a reconfigurable cluster of FPGA that can be scaled to $nxn$ array of FPGA.
+
+![1701254301534](image/Dia_08/1701254301534.png)
+
+The works under the paradigm of **_Space computing_** and reconfigurable resources of the **FPGA**.
+
+On scientific computing, they are requiring the building of more and more complex systems to allow to do haigh performance computation. the paradigm is base on have more power of computation based on **_Temporary computing_**, increase the frequency of the execution of the tasks, and it is quick expensive.
+
+> Cluster of FPGAs can be use as communication infrastructures and for general purpose applications.
+
+![1701255031300](image/Dia_08/1701255031300.png)
+
+### The Hardware Design
+
+![1701255337056](image/Dia_08/1701255337056.png)
+
+### Software stack
+
+![1701255744756](image/Dia_08/1701255744756.png)
+
+They use:
+
+- XSA2Bit
+  - Generate device tree overlay from an XSA and compile source
+- ComBlock
+  - An abstraction layer between CPU and FPGA
+- Linux Driverrs
+  - Secure access for read and write operations
+- JupyterHub
+  - Authentication, authorization, and accountability
+
+### Cluster definition
+
+1. Define the cluster with a JSON Strcuture
+2. Create an iPython cluster
+
+### Cluster creation and configuration
+
+1. Create and connect to your iPython cluster
+2. Load and apply the FPGA configuration, device tree overlay and Linux driver.
+
+### Remote includes and accessing LKM
+
+1. Instantiation of the files
+2. Use remote nodes in python with `%px` definition
+
+```python
+%px import library
+```
+
+3. Load the comblock FIFO
+4. Read the solutions from the solver
