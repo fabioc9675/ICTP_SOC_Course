@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="firTop.h" path="/home/argo49/smr3891/labs/LAB_Fir/src/firTop.h"/>
+    <originFiles name="firTop.cpp" path="/home/argo49/smr3891/labs/LAB_Fir/src/firTop.cpp"/>
+    <originFiles name="firCoeff.h" path="/home/argo49/smr3891/labs/LAB_Fir/src/firCoeff.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

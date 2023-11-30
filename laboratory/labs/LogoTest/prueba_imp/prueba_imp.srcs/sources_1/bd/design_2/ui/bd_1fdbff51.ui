@@ -1,0 +1,14 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-374,-295",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace inst AdderFab_0 -pg 1 -lvl 2 -x 320 -y -70 -defaultsOSRD
+preplace inst AdderFab_1 -pg 1 -lvl 1 -x 110 -y -150 -defaultsOSRD
+levelinfo -pg 1 0 110 320 430
+pagesize -pg 1 -db -bbox -sgen 0 -230 430 160
+"
+}
+

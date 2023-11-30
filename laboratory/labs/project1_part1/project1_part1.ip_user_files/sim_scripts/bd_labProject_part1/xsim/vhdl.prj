@@ -1,0 +1,16 @@
+vhdl xil_defaultlib  \
+"../../../bd/bd_labProject_part1/ipshared/8699/src/cdcc.vhd" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_CDC_ADC_0/sim/bd_labProject_part1_CDC_ADC_0.vhd" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_CDC_DAC_0/sim/bd_labProject_part1_CDC_DAC_0.vhd" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_delayShiftReg_0/sim/bd_labProject_part1_delayShiftReg_0.vhd" \
+"../../../bd/bd_labProject_part1/ipshared/7b64/hdl/axil.vhdl" \
+"../../../bd/bd_labProject_part1/ipshared/7b64/hdl/axif.vhdl" \
+"../../../bd/bd_labProject_part1/ipshared/7b64/hdl/tdpram.vhdl" \
+"../../../bd/bd_labProject_part1/ipshared/7b64/hdl/graysync.vhdl" \
+"../../../bd/bd_labProject_part1/ipshared/7b64/hdl/fifo.vhdl" \
+"../../../bd/bd_labProject_part1/ipshared/7b64/hdl/comblock.vhdl" \
+"../../../bd/bd_labProject_part1/ipshared/7b64/hdl/axi_comblock.vhdl" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_comblock_0_0/sim/bd_labProject_part1_comblock_0_0.vhd" \
+"../../../bd/bd_labProject_part1/ip/bd_labProject_part1_rst_ps7_0_50M_0/sim/bd_labProject_part1_rst_ps7_0_50M_0.vhd" \
+
+nosort

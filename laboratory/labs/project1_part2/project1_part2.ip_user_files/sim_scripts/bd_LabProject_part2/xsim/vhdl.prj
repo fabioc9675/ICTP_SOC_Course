@@ -1,0 +1,60 @@
+vhdl xil_defaultlib  \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_axi_smc_0/bd_0/ip/ip_1/sim/bd_17fb_psr_aclk_0.vhd" \
+"../../../bd/bd_LabProject_part2/ipshared/8699/src/cdcc.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_CDCC_ADC_0/sim/bd_LabProject_part2_CDCC_ADC_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_CDCC_DAC_0/sim/bd_LabProject_part2_CDCC_DAC_0.vhd" \
+"../../../bd/bd_LabProject_part2/ipshared/7b64/hdl/axil.vhdl" \
+"../../../bd/bd_LabProject_part2/ipshared/7b64/hdl/axif.vhdl" \
+"../../../bd/bd_LabProject_part2/ipshared/7b64/hdl/tdpram.vhdl" \
+"../../../bd/bd_LabProject_part2/ipshared/7b64/hdl/graysync.vhdl" \
+"../../../bd/bd_LabProject_part2/ipshared/7b64/hdl/fifo.vhdl" \
+"../../../bd/bd_LabProject_part2/ipshared/7b64/hdl/comblock.vhdl" \
+"../../../bd/bd_LabProject_part2/ipshared/7b64/hdl/axi_comblock.vhdl" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_comblock_0_0/sim/bd_LabProject_part2_comblock_0_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_dacMux_0/sim/bd_LabProject_part2_dacMux_0.vhd" \
+"../../../bd/bd_LabProject_part2/ipshared/7826/src/bram_incr.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_histogram_gen_0/sim/bd_LabProject_part2_histogram_gen_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_crossLevelTrigger_0/sim/bd_LabProject_part2_crossLevelTrigger_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_delayShiftReg_0/sim/bd_LabProject_part2_delayShiftReg_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_oneShotTimer_0/sim/bd_LabProject_part2_oneShotTimer_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_ring_buffer_0/sim/bd_LabProject_part2_ring_buffer_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_peak_detector_0_0/peak_detector_c_addsub_v12_0_i0/sim/peak_detector_c_addsub_v12_0_i0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_peak_detector_0_0/peak_detector_c_counter_binary_v12_0_i0/sim/peak_detector_c_counter_binary_v12_0_i0.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/conv_pkg.vhd" \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/synth_reg.vhd" \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/synth_reg_w_init.vhd" \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/srl17e.vhd" \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/srl33e.vhd" \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/synth_reg_reg.vhd" \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/single_reg_w_init.vhd" \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/xlclockdriver_rd.vhd" \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/peak_detector_entity_declarations.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/ee05/hdl/peak_detector.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_peak_detector_0_0/sim/bd_LabProject_part2_peak_detector_0_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_c_addsub_v12_0_i0/sim/shaper_c_addsub_v12_0_i0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_c_addsub_v12_0_i1/sim/shaper_c_addsub_v12_0_i1.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_c_addsub_v12_0_i2/sim/shaper_c_addsub_v12_0_i2.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_c_addsub_v12_0_i3/sim/shaper_c_addsub_v12_0_i3.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_c_addsub_v12_0_i4/sim/shaper_c_addsub_v12_0_i4.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_c_addsub_v12_0_i5/sim/shaper_c_addsub_v12_0_i5.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_c_counter_binary_v12_0_i0/sim/shaper_c_counter_binary_v12_0_i0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_mult_gen_v12_0_i0/sim/shaper_mult_gen_v12_0_i0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_mult_gen_v12_0_i1/sim/shaper_mult_gen_v12_0_i1.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_mult_gen_v12_0_i2/sim/shaper_mult_gen_v12_0_i2.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/shaper_mult_gen_v12_0_i3/sim/shaper_mult_gen_v12_0_i3.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/15f4/hdl/shaper_entity_declarations.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../project1_part2.gen/sources_1/bd/bd_LabProject_part2/ipshared/15f4/hdl/shaper.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_pulseShaper_0/sim/bd_LabProject_part2_pulseShaper_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_rst_clk_wiz_0_50M_0/sim/bd_LabProject_part2_rst_clk_wiz_0_50M_0.vhd" \
+"../../../bd/bd_LabProject_part2/ip/bd_LabProject_part2_rst_ps7_0_50M_0/sim/bd_LabProject_part2_rst_ps7_0_50M_0.vhd" \
+"../../../bd/bd_LabProject_part2/sim/bd_LabProject_part2.vhd" \
+
+nosort

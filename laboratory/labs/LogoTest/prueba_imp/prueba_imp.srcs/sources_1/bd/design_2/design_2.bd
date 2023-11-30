@@ -1,0 +1,31 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../prueba_imp.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "AdderFab_0": "",
+      "AdderFab_1": ""
+    },
+    "components": {
+      "AdderFab_0": {
+        "vlnv": "user.org:user:AdderFab:2",
+        "xci_name": "design_2_AdderFab_0_0",
+        "xci_path": "ip/design_2_AdderFab_0_0/design_2_AdderFab_0_0.xci",
+        "inst_hier_path": "AdderFab_0"
+      },
+      "AdderFab_1": {
+        "vlnv": "user.org:user:AdderFab:2",
+        "xci_name": "design_2_AdderFab_1_0",
+        "xci_path": "ip/design_2_AdderFab_1_0/design_2_AdderFab_1_0.xci",
+        "inst_hier_path": "AdderFab_1"
+      }
+    }
+  }
+}

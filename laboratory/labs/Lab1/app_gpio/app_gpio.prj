@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="app_gpio" location="/home/argo49/smr3891/labs/Lab1/app_gpio" platform="/home/argo49/smr3891/labs/Lab1/bd_gpio_wrapper/export/bd_gpio_wrapper/bd_gpio_wrapper.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="app_gpio_system" sysConfig="bd_gpio_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="15d9d9f1975a0f275e6bffd69c8bfc4d">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.650327052" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1612248251" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

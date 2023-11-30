@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln75_fu_986_p2" SOURCE="LAB_Fir/src/firTop.cpp:75" VARIABLE="icmp_ln75" MODULE="Loop_Shift_Accum_Loop_proc2" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mux" ID="" IMPL="auto" LATENCY="0" OPTYPE="mux" PRAGMA="" RTLNAME="mux_1818_32_1_1_U1" SOURCE="LAB_Fir/src/firTop.cpp:79" VARIABLE="data_1" MODULE="Loop_Shift_Accum_Loop_proc2" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mux" ID="" IMPL="auto" LATENCY="0" OPTYPE="mux" PRAGMA="" RTLNAME="mux_1818_32_1_1_U2" SOURCE="LAB_Fir/src/firTop.cpp:82" VARIABLE="tmp_i" MODULE="Loop_Shift_Accum_Loop_proc2" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="0" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_1_1_U3" SOURCE="LAB_Fir/src/firTop.cpp:82" VARIABLE="mul_ln82" MODULE="Loop_Shift_Accum_Loop_proc2" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="acc_1_fu_3553_p2" SOURCE="LAB_Fir/src/firTop.cpp:82" VARIABLE="acc_1" MODULE="Loop_Shift_Accum_Loop_proc2" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln72_fu_3534_p2" SOURCE="LAB_Fir/src/firTop.cpp:72" VARIABLE="add_ln72" MODULE="Loop_Shift_Accum_Loop_proc2" LOOP="Shift_Accum_Loop" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fifo" ID="" IMPL="srl" LATENCY="0" OPTYPE="fifo" PRAGMA="" RTLNAME="acc_loc_channel_U" SOURCE="" VARIABLE="acc_loc_channel" MODULE="fir" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+</BindInfo>

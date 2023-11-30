@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="alu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="456.877 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject type="logic" fp_name="/alu_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/alu_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/op_code">
+      <obj_property name="ElementShortName">op_code[2:0]</obj_property>
+      <obj_property name="ObjectShortName">op_code[2:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/data_a">
+      <obj_property name="ElementShortName">data_a[16:0]</obj_property>
+      <obj_property name="ObjectShortName">data_a[16:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/data_b">
+      <obj_property name="ElementShortName">data_b[16:0]</obj_property>
+      <obj_property name="ObjectShortName">data_b[16:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/result">
+      <obj_property name="ElementShortName">result[16:0]</obj_property>
+      <obj_property name="ObjectShortName">result[16:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/status">
+      <obj_property name="ElementShortName">status[1:0]</obj_property>
+      <obj_property name="ObjectShortName">status[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/alu_tb/stop">
+      <obj_property name="ElementShortName">stop</obj_property>
+      <obj_property name="ObjectShortName">stop</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/alu_tb/WIDTH">
+      <obj_property name="ElementShortName">WIDTH</obj_property>
+      <obj_property name="ObjectShortName">WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/alu_tb/N_SAMPL">
+      <obj_property name="ElementShortName">N_SAMPL</obj_property>
+      <obj_property name="ObjectShortName">N_SAMPL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/dut/mid_sum_r">
+      <obj_property name="ElementShortName">mid_sum_r[17:0]</obj_property>
+      <obj_property name="ObjectShortName">mid_sum_r[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/dut/mid_sub_r">
+      <obj_property name="ElementShortName">mid_sub_r[17:0]</obj_property>
+      <obj_property name="ObjectShortName">mid_sub_r[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/dut/status_r">
+      <obj_property name="ElementShortName">status_r[1:0]</obj_property>
+      <obj_property name="ObjectShortName">status_r[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/dut/mid_or_r">
+      <obj_property name="ElementShortName">mid_or_r[16:0]</obj_property>
+      <obj_property name="ObjectShortName">mid_or_r[16:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/dut/mid_and_r">
+      <obj_property name="ElementShortName">mid_and_r[16:0]</obj_property>
+      <obj_property name="ObjectShortName">mid_and_r[16:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/dut/mid_xor_r">
+      <obj_property name="ElementShortName">mid_xor_r[16:0]</obj_property>
+      <obj_property name="ObjectShortName">mid_xor_r[16:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/alu_tb/dut/result_r">
+      <obj_property name="ElementShortName">result_r[16:0]</obj_property>
+      <obj_property name="ObjectShortName">result_r[16:0]</obj_property>
+   </wvobject>
+</wave_config>
