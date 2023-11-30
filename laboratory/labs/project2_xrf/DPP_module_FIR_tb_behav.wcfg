@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DPP_module_FIR_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DPP_module_FIR_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="655.780001 us"></ZoomEndTime>
+      <Cursor1Time time="78.521000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject type="logic" fp_name="/DPP_module_FIR_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/DPP_module_FIR_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/DPP_module_FIR_tb/n_rst">
+      <obj_property name="ElementShortName">n_rst</obj_property>
+      <obj_property name="ObjectShortName">n_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/DPP_module_FIR_tb/ena">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/cha">
+      <obj_property name="ElementShortName">cha[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cha[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/DPP_module_FIR_tb/stop">
+      <obj_property name="ElementShortName">stop</obj_property>
+      <obj_property name="ObjectShortName">stop</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/data_in">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/threshold_high">
+      <obj_property name="ElementShortName">threshold_high[15:0]</obj_property>
+      <obj_property name="ObjectShortName">threshold_high[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/threshold_low">
+      <obj_property name="ElementShortName">threshold_low[15:0]</obj_property>
+      <obj_property name="ObjectShortName">threshold_low[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/op_mode">
+      <obj_property name="ElementShortName">op_mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op_mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/data_to_fifo">
+      <obj_property name="ElementShortName">data_to_fifo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_fifo[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/cf_1">
+      <obj_property name="ElementShortName">cf_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cf_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/cf_2">
+      <obj_property name="ElementShortName">cf_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cf_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/cf_3">
+      <obj_property name="ElementShortName">cf_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cf_3[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/DPP_module_FIR_tb/data_valid">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/DPP_module_FIR_tb/fifo_wr_en_mux_out">
+      <obj_property name="ElementShortName">fifo_wr_en_mux_out</obj_property>
+      <obj_property name="ObjectShortName">fifo_wr_en_mux_out</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/DPP_module_FIR_tb/N_SAMPL">
+      <obj_property name="ElementShortName">N_SAMPL</obj_property>
+      <obj_property name="ObjectShortName">N_SAMPL</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider18" type="divider">
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/dut/edge_detector/data_i">
+      <obj_property name="ElementShortName">data_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/dut/edge_detector/det_threshold_high_i">
+      <obj_property name="ElementShortName">det_threshold_high_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">det_threshold_high_i[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/DPP_module_FIR_tb/dut/edge_detector/det_threshold_low_i">
+      <obj_property name="ElementShortName">det_threshold_low_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">det_threshold_low_i[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/DPP_module_FIR_tb/dut/edge_detector/rejection_flag_o">
+      <obj_property name="ElementShortName">rejection_flag_o</obj_property>
+      <obj_property name="ObjectShortName">rejection_flag_o</obj_property>
+   </wvobject>
+</wave_config>
