@@ -29,10 +29,6 @@ About the sensor:
 
 ### Structure of a Detector
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 ### Pipeline
 
 - **Data acquisition**
